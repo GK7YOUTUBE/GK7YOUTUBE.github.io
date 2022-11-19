@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GK7 YOUTUBE</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap");
+      * {
+        margin: 0;
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 1000;
+      }
+      audio {
+        filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+        width: 170px;
+        height: 25px;
+      }
+      body * {
+        font-weight: 1000;
+      }
+      body {
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <div
+      class="inputs"
+      style="position: absolute; left: 0; top: 0; padding: 10px; color: rgb(0, 255, 191)"
+    >
+      <table>
+        <tr>
+          <td>Drop Count</td>
+          <td>
+            <input
+              type="number"
+              onchange="changeCount(this.value)"
+              min="1"
+              value="500"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Drop Width</td>
+          <td>
+            <input
+              type="number"
+              onchange="changeDropWidth(this.value)"
+              min="1"
+              value="2"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Drop Height</td>
+          <td>
+            <input
+              type="number"
+              onchange="changeDropHeight(this.value)"
+              min="1"
+              value="15"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Gravity</td>
+          <td>
+            <input
+              type="number"
+              onchange="changeGravity(this.value)"
+              min="1"
+              value="10"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Color</td>
+          <td>
+            <input type="color" value="#c537E6" id="color" />
+          </td>
+        </tr>
+        <tr>
+          <td>Background Color</td>
+          <td>
+            <input type="color" value="#000000" id="backgroundColor" />
+          </td>
+        </tr>
+        <tr>
+          <td>Eminem - Stan</td>
+          <td>
+            <audio controls controlsList="nodownload noplaybackrate">
+              <source src="music.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <footer
+      style="
+        position: absolute;
+        bottom: 0;
+        color: #00ffea;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+      "
+      </div>
+      WEBSITE BY DO VIET GIANG
+      <div>
+        All rights reserved - © 2022
+    <script src="purple_rain.js"></script>
+  </body>
+</html>
